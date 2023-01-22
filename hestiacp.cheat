@@ -1,0 +1,1440 @@
+% HestiaCP
+# update user notification
+v-acknowledge-user-notification <user> <notification>
+
+# generate access key
+v-add-access-key <user> <permissions> <comment> <format>
+
+# add backup host
+v-add-backup-host <type> <host> <username> <password> <path> <port>
+
+# add cron job for hestia automatic updates
+v-add-cron-hestia-autoupdate <mode>
+
+# add cron job
+v-add-cron-job <user> <min> <hour> <day> <month> <wday> <command> <job> <restart>
+
+# add cron job for Let's Encrypt certificates
+v-add-cron-letsencrypt-job
+
+# add cron reports
+v-add-cron-reports <user>
+
+# add cron reports
+v-add-cron-restart-job
+
+# add database
+v-add-database <user> <database> <dbuser> <dbpass> <type> <host> <charset>
+
+# add new database server
+v-add-database-host <type> <host> <dbuser> <dbpass> <max_db> <charsets> <template> <port>
+
+# add temp database user
+v-add-database-temp-user <user> <database> <type> <host> <ttl>
+
+# add dns domain
+v-add-dns-domain <user> <domain> <ip> <ns> <ns> <ns> <ns> <ns> <ns> <ns> <ns> <restart>
+
+# add dns domain or dns record after web domain alias
+v-add-dns-on-web-alias <user> <alias> <ip> <restart>
+
+# add dns record
+v-add-dns-record <user> <domain> <record> <type> <value> <priority> <restart> <ttl>
+
+# add web/dns/mail domain
+v-add-domain <user> <domain> <restart>
+
+# Enable FastCGI cache for nginx
+v-add-fastcgi-cache <user> <domain> <duration> <debug> <restart>
+
+# add firewall blocking rule
+v-add-firewall-ban <ip> <chain>
+
+# add firewall chain
+v-add-firewall-chain <chain> <port> <protocol> <protocol>
+
+# add firewall ipset
+v-add-firewall-ipset <name> <source> <ipversion> <autoupdate> <refresh>
+
+# add firewall rule
+v-add-firewall-rule <action> <ip> <port> <protocol> <comment> <rule>
+
+# archive directory
+v-add-fs-archive <user> <archive> <source> <source>.
+
+# add directory
+v-add-fs-directory <user> <directory>
+
+# add file
+v-add-fs-file <user> <file>
+
+# check letsencrypt domain
+v-add-letsencrypt-domain <user> <domain> <aliases> <mail>
+
+# add letsencrypt for host and backend
+v-add-letsencrypt-host
+
+# register letsencrypt user account
+v-add-letsencrypt-user <user>
+
+# add mail domain account
+v-add-mail-account <user> <domain> <account> <password> <quota>
+
+# add mail account alias aka nickname
+v-add-mail-account-alias <user> <domain> <account> <alias>
+
+# add mail account autoreply message
+v-add-mail-account-autoreply <user> <domain> <account> <message>
+
+# add mail account forward address
+v-add-mail-account-forward <user> <domain> <account> <forward>
+
+# add mail account forward-only flag
+v-add-mail-account-fwd-only <user> <domain> <account>
+
+# add mail domain
+v-add-mail-domain <user> <domain> <antispam> <antivirus> <dkim> <dkim_size> <restart> <reject_spam>
+
+# add mail domain antispam support
+v-add-mail-domain-antispam <user> <domain>
+
+# add mail domain antivirus support
+v-add-mail-domain-antivirus <user> <domain>
+
+# add mail domain catchall account
+v-add-mail-domain-catchall <user> <domain> <email>
+
+# add mail domain dkim support
+v-add-mail-domain-dkim <user> <domain> <dkim_size>
+
+# add mail domain reject spam
+v-add-mail-domain-reject <user> <domain>
+
+# Add mail domain smtp relay support
+v-add-mail-domain-smtp-relay <user> <domain> <host> <username> <password> <port>
+
+# add mail SSL for $domain
+v-add-mail-domain-ssl <user> <domain> <ssl_dir> <restart>
+
+# add webmail support for a domain
+v-add-mail-domain-webmail <user> <domain> <webmail> <restart> <quiet>
+
+# add remote dns domain
+v-add-remote-dns-domain <user> <domain> <flush>
+
+# add new remote dns host
+v-add-remote-dns-host <host> <port> <user> <password> <type> <dns_user>
+
+# add remote dns domain record
+v-add-remote-dns-record <user> <domain>
+
+# add IP address to API allow list
+v-add-sys-api-ip <ip>
+
+# add file manager functionality to Hestia Control Panel
+v-add-sys-filemanager <mode>
+
+# add system firewall
+v-add-sys-firewall
+
+# add system ip address
+v-add-sys-ip <ip> <netmask> <interface> <user> <ip_status> <ip_name> <nat_ip>
+
+# add PHPMailer functionality to Hestia Control Panel
+v-add-sys-phpmailer <mode>
+
+# enables support for single sign on phpMyAdmin
+v-add-sys-pma-sso
+
+# add system quota
+v-add-sys-quota
+
+# Install Rainloop webmail client
+v-add-sys-rainloop <mode>
+
+# Install Roundcube webmail client
+v-add-sys-roundcube <mode>
+
+# add system sftp jail
+v-add-sys-sftp-jail <restart>
+
+# Add SMTP Account for logging, notification and internal mail
+v-add-sys-smtp <domain> <port> <smtp_security> <username> <password> <email>
+
+# add system wide smtp relay support
+v-add-sys-smtp-relay <host> <username> <password> <port>
+
+# add system user
+v-add-user <user> <password> <email> <package> <name> <lastname>
+
+# add 2fa to existing user
+v-add-user-2fa <user>
+
+# add composer (php dependency manager) for a user
+v-add-user-composer <user>
+
+# add user notification
+v-add-user-notification <user> <topic> <notice> <type>
+
+# adding user package
+v-add-user-package  <package> <rewrite>
+
+# add user sftp jail
+v-add-user-sftp-jail <user> <restart>
+
+# add user sftp key
+v-add-user-sftp-key <user> <ttl>
+
+# add ssh key
+v-add-user-ssh-key <user> <key>
+
+# add wp-cli for a user
+v-add-user-wp-cli <user>
+
+# add web domain
+v-add-web-domain <user> <domain> <restart> <aliases> <proxy_extensions>
+
+# add web domain alias
+v-add-web-domain-alias <user> <domain> <aliases> <restart>
+
+# Allow other users create subdomains
+v-add-web-domain-allow-users <user> <domain>
+
+# add web domain backend
+v-add-web-domain-backend <user> <domain> <template> <restart>
+
+# add ftp account for web domain.
+v-add-web-domain-ftp <user> <domain> <ftp_user> <ftp_password> <ftp_path>
+
+# add password protection for web domain
+v-add-web-domain-httpauth <user> <domain> <auth_user> <auth_password> <restart>
+
+# add webdomain proxy support
+v-add-web-domain-proxy <user> <domain> <template> <extentions> <restart>
+
+# Adding force redirect to domain
+v-add-web-domain-redirect <user> <domain> <redirect> <httpcode> <restart>
+
+# adding ssl for domain
+v-add-web-domain-ssl <user> <domain> <ssl_dir> <ssl_home> <restart>
+
+# Adding force SSL for a domain
+v-add-web-domain-ssl-force <user> <domain> <restart> <quiet>
+
+# Adding hsts to a domain
+v-add-web-domain-ssl-hsts <user> <domain> <restart> <quiet>
+
+# Adding force SSL for a domain
+v-add-web-domain-ssl-preset <user> <domain> <ssl>
+
+# add log analyzer to generate domain statistics
+v-add-web-domain-stats <user> <domain> <type>
+
+# add password protection to web domain statistics
+v-add-web-domain-stats-user <user> <domain> <stats_user> <stats_password> <restart>
+
+# add php fpm version
+v-add-web-php <version>
+
+# backup system user with all its objects
+v-backup-user <user> <notify>
+
+# backup all users
+v-backup-users
+
+# change cron job
+v-change-cron-job <user> <job> <min> <hour> <day> <month> <wday> <command>
+
+# change database server password
+v-change-database-host-password <type> <host> <user> <password>
+
+# change database owner
+v-change-database-owner <database> <user>
+
+# change database password
+v-change-database-password <user> <database> <dbpass>
+
+# change database username
+v-change-database-user <user> <database> <dbuser> <dbpass>
+
+# change dns domain expiration date
+v-change-dns-domain-exp <user> <domain> <exp>
+
+# change dns domain ip address
+v-change-dns-domain-ip <user> <domain> <ip> <restart>
+
+# change dns domain soa record
+v-change-dns-domain-soa <user> <domain> <soa> <restart>
+
+# change dns domain template
+v-change-dns-domain-tpl <user> <domain> <template> <restart>
+
+# change dns domain ttl
+v-change-dns-domain-ttl <user> <domain> <ttl> <restart>
+
+# change dns domain record
+v-change-dns-record <user> <domain> <id> <record> <type> <value> <priority> <restart> <ttl>
+
+# change dns domain record id
+v-change-dns-record-id <user> <domain> <id> <newid> <restart>
+
+# change domain owner
+v-change-domain-owner <domain> <user>
+
+# change firewall rule
+v-change-firewall-rule <rule> <action> <ip> <port> <protocol> <comment>
+
+# change file permission
+v-change-fs-file-permission <user> <file> <permissions>
+
+# change mail account password
+v-change-mail-account-password <user> <domain> <account> <password>
+
+# change mail account quota
+v-change-mail-account-quota <user> <domain> <account> <quota>
+
+# change mail domain rate limit
+v-change-mail-account-rate-limit <user> <domain> <account> <rate>
+
+# change mail domain catchall email
+v-change-mail-domain-catchall <user> <domain> <email>
+
+# change mail account rate limit
+v-change-mail-domain-rate-limit <user> <domain> <account> <rate>
+
+# change domain ssl certificate
+v-change-mail-domain-sslcert <user> <domain> <ssl_dir> <restart>
+
+# change remote dns domain expiration date
+v-change-remote-dns-domain-exp <user> <domain>
+
+# change remote dns domain SOA
+v-change-remote-dns-domain-soa <user> <domain>
+
+# change remote dns domain TTL
+v-change-remote-dns-domain-ttl <user> <domain>
+
+# Enable / Disable API access
+v-change-sys-api <status>
+
+# change sysconfig value
+v-change-sys-config-value <key> <value>
+
+# change phpmyadmin/phppgadmin alias url
+v-change-sys-db-alias <type> <alias>
+
+# enable or disable demo mode
+v-change-sys-demo-mode <active>
+
+# change hestia ssl certificate
+v-change-sys-hestia-ssl <ssl_dir> <restart>
+
+# change hostname
+v-change-sys-hostname <hostname>
+
+# change ip name
+v-change-sys-ip-name <ip> <name>
+
+# change ip nat address
+v-change-sys-ip-nat <ip> <nat_ip> <restart>
+
+# change ip owner
+v-change-sys-ip-owner <ip> <user>
+
+# change ip status
+v-change-sys-ip-status <ip> <ip_status>
+
+# change sys language
+v-change-sys-language <language> <update_users>
+
+# Change default php version server wide
+v-change-sys-php <version>
+
+# change system backend port
+v-change-sys-port <port>
+
+# update web templates
+v-change-sys-release <restart>
+
+# change service config
+v-change-sys-service-config <config> <service> <restart>
+
+# change system timezone
+v-change-sys-timezone <timezone>
+
+# change webmail alias url
+v-change-sys-webmail <webmail>
+
+# changes user configuration value
+v-change-user-config-value <user> <key> <value>
+
+# change user contact email
+v-change-user-contact <user> <email>
+
+# change user language
+v-change-user-language <user> <language>
+
+# change user full name
+v-change-user-name <user> <name> <last_name>
+
+# change user nameservers
+v-change-user-ns <user> <ns>1 <ns> <ns> <ns> <ns> <ns> <ns> <ns>8
+
+# change user package
+v-change-user-package <user> <package> <force>
+
+# change user password
+v-change-user-password <user> <password>
+
+# add php  version alias to .bash_aliases
+v-change-user-php-cli <user> <version>
+
+# change user random key
+v-change-user-rkey <user> <hash>
+
+# updates user role
+v-change-user-role <user> <role>
+
+# change user shell
+v-change-user-shell <user> <shell>
+
+# updates user role
+v-change-user-sort-order <user> <sort_order>
+
+# change user default template
+v-change-user-template <user> <type> <template>
+
+# updates user role
+v-change-user-theme <user> <role>
+
+# change web domain backend template
+v-change-web-domain-backend-tpl <user> <domain> <template> <restart>
+
+# enable/disable directory listing
+v-change-web-domain-dirlist <user> <domain> <mode>
+
+# Changes the document root for an existing web domain
+v-change-web-domain-docroot <user> <domain> <target_domain> <directory> <php>
+
+# change ftp user password.
+v-change-web-domain-ftp-password <user> <domain> <ftp_user> <ftp_password>
+
+# change path for ftp user.
+v-change-web-domain-ftp-path <user> <domain> <ftp_user> <ftp_path>
+
+# change password for http auth user
+v-change-web-domain-httpauth <user> <domain> <auth_user> <auth_password> <restart>
+
+# change web domain ip
+v-change-web-domain-ip <user> <domain> <domain> <restart>
+
+# change web domain name
+v-change-web-domain-name <user> <domain> <new_domain> <restart>
+
+# change web domain proxy template
+v-change-web-domain-proxy-tpl <user> <domain> <template> <extentions> <restart>
+
+# change domain ssl certificate
+v-change-web-domain-sslcert <user> <domain> <ssl_dir> <restart>
+
+# changing domain ssl home
+v-change-web-domain-sslhome <user> <domain> <ssl_home> <restart>
+
+# change web domain statistics
+v-change-web-domain-stats <user> <domain> <type>
+
+# change web domain template
+v-change-web-domain-tpl <user> <domain> <template> <restart>
+
+# check access key
+v-check-access-key <access_key_id> <secret_access_key> <command> <format>
+
+# check api key
+v-check-api-key <key>
+
+# open file
+v-check-fs-permission <user> <file>
+
+# check user password
+v-check-mail-account-hash <type> <password> <hash>
+
+# check user token
+v-check-user-2fa <user> <token>
+
+# check user hash
+v-check-user-hash <user> <hash>
+
+# check user password
+v-check-user-password <user> <password> <return_hash>
+
+# copy directory
+v-copy-fs-directory <user> <src_directory> <dst_directory>
+
+# copy file
+v-copy-fs-file <user> <src_file> <dst_file>
+
+# duplicate existing package
+v-copy-user-package <package> <new_package>
+
+# delete access key
+v-delete-access-key <access_key_id>
+
+# delete backup ftp server
+v-delete-backup-host <type> <host>
+
+# delete hestia autoupdate cron job
+v-delete-cron-hestia-autoupdate
+
+# delete cron job
+v-delete-cron-job <user> <job>
+
+# delete cron reports
+v-delete-cron-reports <user>
+
+# delete restart job
+v-delete-cron-restart-job
+
+# delete database
+v-delete-database <user> <database>
+
+# delete database server
+v-delete-database-host <type> <host>
+
+# deletes temp database user
+v-delete-database-temp-user <user> <dbuser> <type> <host>
+
+# delete user databases
+v-delete-databases <user>
+
+# delete dns domain
+v-delete-dns-domain <user> <domain>
+
+# delete dns domains
+v-delete-dns-domains <user> <restart>
+
+# delete dns domains based on SRC field
+v-delete-dns-domains-src <user> <src> <restart>
+
+# delete dns domain or dns record based on web domain alias
+v-delete-dns-on-web-alias <user> <domain> <alias> <restart>
+
+# delete dns record
+v-delete-dns-record <user> <domain> <id> <restart>
+
+# delete web/dns/mail domain
+v-delete-domain <user> <domain>
+
+# Disable FastCGI cache for nginx
+v-delete-fastcgi-cache <user> <domain> <restart>
+
+# delete firewall blocking rule
+v-delete-firewall-ban <ip> <chain>
+
+# delete firewall chain
+v-delete-firewall-chain <chain>
+
+# delete firewall ipset
+v-delete-firewall-ipset <name>
+
+# delete firewall rule
+v-delete-firewall-rule <rule>
+
+# delete directory
+v-delete-fs-directory <user> <directory>
+
+# delete file
+v-delete-fs-file <user> <file>
+
+# deleting letsencrypt ssl cetificate for domain
+v-delete-letsencrypt-domain <user> <domain> <restart> <mail>
+
+# delete mail account
+v-delete-mail-account <user> <domain> <account>
+
+# delete mail account alias aka nickname
+v-delete-mail-account-alias <user> <domain> <account> <alias>
+
+# delete mail account autoreply message
+v-delete-mail-account-autoreply <user> <domain> <account> <alias>
+
+# delete mail account forward
+v-delete-mail-account-forward <user> <domain> <account> <email>
+
+# delete mail account forward-only flag
+v-delete-mail-account-fwd-only <user> <domain> <account>
+
+# delete mail domain
+v-delete-mail-domain <user> <domain>
+
+# delete mail domain antispam support
+v-delete-mail-domain-antispam <user> <domain>
+
+# delete mail domain antivirus support
+v-delete-mail-domain-antivirus <user> <domain>
+
+# delete mail domain catchall email
+v-delete-mail-domain-catchall <user> <domain>
+
+# delete mail domain dkim support
+v-delete-mail-domain-dkim <user> <domain>
+
+# delete mail domain reject spam support
+v-delete-mail-domain-reject <user> <domain>
+
+# Remove mail domain smtp relay support
+v-delete-mail-domain-smtp-relay <user> <domain>
+
+# delete mail domain ssl support
+v-delete-mail-domain-ssl <user> <domain>
+
+# delete webmail support for a domain
+v-delete-mail-domain-webmail <user> <domain> <restart> <quiet>
+
+# delete mail domains
+v-delete-mail-domains <user>
+
+# delete remote dns domain
+v-delete-remote-dns-domain <user> <domain>
+
+# delete remote dns domains
+v-delete-remote-dns-domains <host>
+
+# delete remote dns host
+v-delete-remote-dns-host <host>
+
+# delete remote dns domain record
+v-delete-remote-dns-record <user> <domain>
+
+# delete ip adresss from allowed ip list api
+v-delete-sys-api-ip <ip>
+
+# remove file manager functionality from Hestia Control Panel
+v-delete-sys-filemanager <full>
+
+# delete system firewall
+v-delete-sys-firewall
+
+# delete system ip
+v-delete-sys-ip
+
+# delete exim mail queue
+v-delete-sys-mail-queue
+
+# disables support for single sign on PHPMYADMIN
+v-delete-sys-pma-sso
+
+# delete system quota
+v-delete-sys-quota
+
+# delete system sftp jail
+v-delete-sys-sftp-jail
+
+# Remove SMTP Account for logging, notification and internal mail
+v-delete-sys-smtp
+
+# disable system wide smtp relay support
+v-delete-sys-smtp-relay
+
+# delete user
+v-delete-user <user> <restart>
+
+# delete 2fa of existing user
+v-delete-user-2fa <user>
+
+# Delete auth log file for user
+v-delete-user-auth-log
+
+# delete user backup
+v-delete-user-backup <user> <backup>
+
+# delete backup exclusion
+v-delete-user-backup-exclusions <user> <system>
+
+# delete user ips
+v-delete-user-ips <user>
+
+# Delete log file for user
+v-delete-user-log <user>
+
+# delete user notification
+v-delete-user-notification <user> <notification>
+
+# delete user package
+v-delete-user-package <package>
+
+# delete user sftp jail
+v-delete-user-sftp-jail <user>
+
+# add ssh key
+v-delete-user-ssh-key <user> <key>
+
+# delete user usage statistics
+v-delete-user-stats <user> <domain>
+
+# delete web domain
+v-delete-web-domain <user> <domain> <restart>
+
+# delete web domain alias
+v-delete-web-domain-alias <user> <domain> <alias> <restart>
+
+# disables other users create subdomains
+v-delete-web-domain-allow-users <user> <domain>
+
+# deleting web domain backend configuration
+v-delete-web-domain-backend <user> <domain> <restart>
+
+# delete webdomain ftp account
+v-delete-web-domain-ftp <user> <domain> <ftp_user>
+
+# delete http auth user
+v-delete-web-domain-httpauth <user> <domain> <auth_user> <restart>
+
+# deleting web domain proxy configuration
+v-delete-web-domain-proxy <user> <domain> <restart>
+
+# Delete force redirect to domain
+v-delete-web-domain-redirect <user> <domain> <restart>
+
+# delete web domain SSL support
+v-delete-web-domain-ssl <user> <domain> <restart>
+
+# remove ssl force from domain
+v-delete-web-domain-ssl-force <user> <domain> <restart> <quiet>
+
+# remove ssl force from domain
+v-delete-web-domain-ssl-hsts <user> <domain> <restart> <quiet>
+
+# delete web domain statistics
+v-delete-web-domain-stats <user> <domain>
+
+# disable web domain stats authentication support
+v-delete-web-domain-stats-user <user> <domain> <restart>
+
+# delete web domains
+v-delete-web-domains <user> <restart>
+
+# delete php fpm version
+v-delete-web-php <version>
+
+# Download backup
+v-download-backup <user> <backup>
+
+# archive to directory
+v-extract-fs-archive <user> <archive> <directory> <selected_dir> <strip> <test>
+
+# generate api key
+v-generate-api-key
+
+#
+v-generate-debug-report
+
+#
+v-generate-password-hash
+
+# generate self signed certificate and CSR request
+v-generate-ssl-cert <domain> <email> <country> <state> <city> <org> <unit> <aliases> <format>
+
+# get dns domain value
+v-get-dns-domain-value <user> <domain> <key>
+
+# get file type
+v-get-fs-file-type <user> <file>
+
+# get mail account value
+v-get-mail-account-value <user> <domain> <account> <key>
+
+# get mail domain value
+v-get-mail-domain-value <user> <domain> <key>
+
+# get system timezone
+v-get-sys-timezone <format>
+
+# list system timezone
+v-get-sys-timezones <format>
+
+# get user salt
+v-get-user-salt <user> <format>
+
+# get user value
+v-get-user-value <user> <key>
+
+# insert dns domain
+v-insert-dns-domain <user> <data> <src> <flush> <restart>
+
+# insert dns record
+v-insert-dns-record <user> <domain> <data> <restart>
+
+# inserts dns records
+v-insert-dns-records <user> <domain> <data_file> <restart>
+
+# list all API access keys
+v-list-access-key <access_key_id> <format>
+
+# list all API access keys
+v-list-access-keys <format>
+
+# list api
+v-list-api <api> <format>
+
+# list available APIs
+v-list-apis <format>
+
+# list backup host
+v-list-backup-host <type> <format>
+
+# list cron job
+v-list-cron-job <user> <job> <format>
+
+# list user cron jobs
+v-list-cron-jobs <user> <format>
+
+# list database
+v-list-database <user> <database> <format>
+
+# list database host
+v-list-database-host <type> <host> <format>
+
+# list database hosts
+v-list-database-hosts <format>
+
+# list supported database types
+v-list-database-types <format>
+
+# listing databases
+v-list-databases <user> <format>
+
+# list default PHP version used by default.tpl
+v-list-default-php <format>
+
+# list dns domain
+v-list-dns-domain <user> <domain> <format>
+
+# list dns domains
+v-list-dns-domains <user> <format>
+
+# list dns domain records
+v-list-dns-records <user> <domain> <format>
+
+# list dns template
+v-list-dns-template <template> <format>
+
+# list dns templates
+v-list-dns-templates <format>
+
+# list iptables rules
+v-list-firewall <format>
+
+# list firewall block list
+v-list-firewall-ban <format>
+
+# List firewall ipset
+v-list-firewall-ipset <format>
+
+# list firewall rule
+v-list-firewall-rule <rule> <format>
+
+# list directory
+v-list-fs-directory <user> <directory>
+
+# list letsencrypt key
+v-list-letsencrypt-user <user> <format>
+
+# list mail domain account
+v-list-mail-account <user> <domain> <account> <format>
+
+# list mail account autoreply
+v-list-mail-account-autoreply <user> <domain> <account> <format>
+
+# list mail domain accounts
+v-list-mail-accounts <user> <domain> <format>
+
+# list mail domain
+v-list-mail-domain <user> <domain> <format>
+
+# list mail domain dkim
+v-list-mail-domain-dkim <user> <domain> <format>
+
+# list mail domain dkim dns records
+v-list-mail-domain-dkim-dns <user> <domain> <format>
+
+# list mail domain ssl certificate
+v-list-mail-domain-ssl <user> <domain> <format>
+
+# list mail domains
+v-list-mail-domains <user> <format>
+
+# list remote dns host
+v-list-remote-dns-hosts <format>
+
+# list clamd config parameters
+v-list-sys-clamd-config <format>
+
+# list system configuration
+v-list-sys-config <format>
+
+# list system cpu info
+v-list-sys-cpu-status
+
+# list db status
+v-list-sys-db-status
+
+# list disk information
+v-list-sys-disk-status
+
+# list dns status
+v-list-sys-dns-status
+
+# list dovecot config parameters
+v-list-sys-dovecot-config <format>
+
+# list hestia autoupdate settings
+v-list-sys-hestia-autoupdate <format>
+
+# list hestia ssl certificate
+v-list-sys-hestia-ssl <format>
+
+# list system updates
+v-list-sys-hestia-updates <format>
+
+# list system os
+v-list-sys-info <format>
+
+# list system interfaces
+v-list-sys-interfaces <format>
+
+# list system ip
+v-list-sys-ip <ip> <format>
+
+# list system ips
+v-list-sys-ips <format>
+
+# list system languages
+v-list-sys-languages <format>
+
+# list mail status
+v-list-sys-mail-status
+
+# list virtual memory info
+v-list-sys-memory-status
+
+# list mysql config parameters
+v-list-sys-mysql-config <format>
+
+# list system network status
+v-list-sys-network-status
+
+# list nginx config parameters
+v-list-sys-nginx-config <format>
+
+# list postgresql config parameters
+v-list-sys-pgsql-config <format>
+
+# listing availble PHP versions installed
+v-list-sys-php <format>
+
+# list php config parameters
+v-list-sys-php-config <format>
+
+# list proftpd config parameters
+v-list-sys-proftpd-config <format>
+
+# list system rrd charts
+v-list-sys-rrd <format>
+
+# list system services
+v-list-sys-services <format>
+
+# list system shells
+v-list-sys-shells <format>
+
+# list spamassassin config parameters
+v-list-sys-spamd-config <format>
+
+# list sshd port
+v-list-sys-sshd-port <format>
+
+# list system themes
+v-list-sys-themes <format>
+
+# list system users
+v-list-sys-users <format>
+
+# list vsftpd config parameters
+v-list-sys-vsftpd-config <format>
+
+# list web status
+v-list-sys-web-status
+
+# listing available webmail clients
+v-list-sys-webmail <format>
+
+# list user parameters
+v-list-user <user> <format>
+
+# list user log
+v-list-user-auth-log <user> <format>
+
+# list user backup
+v-list-user-backup <user> <backup> <format>
+
+# list backup exclusions
+v-list-user-backup-exclusions <user> <format>
+
+# list user backups
+v-list-user-backups <user> <format>
+
+# list user ips
+v-list-user-ips <user> <format>
+
+# list user log
+v-list-user-log <user> <format>
+
+# list user notifications
+v-list-user-notifications <user> <format>
+
+# list user nameservers
+v-list-user-ns <user> <format>
+
+# list user package
+v-list-user-package <package> <format>
+
+# list user packages
+v-list-user-packages <format>
+
+# add ssh key
+v-list-user-ssh-key <user> <format>
+
+# list user stats
+v-list-user-stats <user> <format>
+
+# list users
+v-list-users <format>
+
+# list overall user stats
+v-list-users-stats <format>
+
+# list web domain parameters
+v-list-web-domain <user> <domain> <format>
+
+# list web domain access log
+v-list-web-domain-accesslog <user> <domain> <lines> <format>
+
+# list web domain error log
+v-list-web-domain-errorlog <user> <domain> <lines> <format>
+
+# list web domain ssl certificate
+v-list-web-domain-ssl <user> <domain> <format>
+
+# list web domains
+v-list-web-domains <user> <format>
+
+# list web statistics
+v-list-web-stats <format>
+
+# list web templates
+v-list-web-templates <format>
+
+# listing backend templates
+v-list-web-templates-backend <format>
+
+# listing proxy templates
+v-list-web-templates-proxy <format>
+
+# adds action event to user or system log
+v-log-action <log_type> <user>
+
+# add user login
+v-log-user-login <user> <ip> <status> <fingerprint>
+
+# Log User logout event
+v-log-user-logout <user> <fingerprint>
+
+# move file
+v-move-fs-directory <user> <src_directory> <dst_directory>
+
+# move file
+v-move-fs-file <user> <src_file> <dst_file>
+
+# open config
+v-open-fs-config <config>
+
+# open file
+v-open-fs-file <user> <file>
+
+# Purge nginx cache
+v-purge-nginx-cache <user> <domain>å
+
+# rebuild all assets for a specified user
+v-rebuild-all <user> <restart>
+
+# rebuild cron jobs
+v-rebuild-cron-jobs <user> <restart>
+
+# rebuild databases
+v-rebuild-database <user> <database>
+
+# rebuild databases
+v-rebuild-databases <user>
+
+# rebuild dns domain
+v-rebuild-dns-domain <user> <domain> <restart> <update_serial>
+
+# rebuild dns domains
+v-rebuild-dns-domains <user> <restart> <update_serial>
+
+# rebuild mail domain
+v-rebuild-mail-domain <user> <domain>
+
+# rebuild mail domains
+v-rebuild-mail-domains <user>
+
+# rebuild system user
+v-rebuild-user <user> <restart>
+
+# rebuild system users
+v-rebuild-users <restart>
+
+# rebuild web domain
+v-rebuild-web-domain <user> <domain> <restart>
+
+# rebuild web domains
+v-rebuild-web-domains <user> <restart>
+
+# change active system theme
+v-refresh-sys-theme
+
+# change package name
+v-rename-user-package <old_name> <new_name>
+
+# Restore system configuration
+v-repair-sys-config <system>
+
+# restart cron service
+v-restart-cron
+
+# restart dns service
+v-restart-dns
+
+# restart ftp service
+v-restart-ftp
+
+# restart mail service
+v-restart-mail <restart>
+
+# restart proxy server
+v-restart-proxy
+
+# restart service
+v-restart-service <service> <restart>
+
+# restart operating system
+v-restart-system <restart> <delay>
+
+# restart web server
+v-restart-web <restarrt>
+
+# restart backend server
+v-restart-web-backend
+
+# restore single cron job
+v-restore-cron-job <user> <backup> <domain> <notify>
+
+# restore single database
+v-restore-database <user> <backup> <database> <notify>
+
+# restore single dns domain
+v-restore-dns-domain <user> <backup> <domain> <notify>
+
+# restore single mail domain
+v-restore-mail-domain <user> <backup> <domain> <notify>
+
+# restore user
+v-restore-user <user> <backup> <web> <dns> <mail> <cron> <udir> <notify>
+
+# restore single web domain
+v-restore-web-domain <user> <backup> <domain> <notify>
+
+# revokes api key
+v-revoke-api-key <hash>
+
+# run cli command
+v-run-cli-cmd <user> <cmd> <arg>.
+
+# adding cronjob for letsencrypt cetificate installation
+v-schedule-letsencrypt-domain <user> <domain> <aliases>
+
+# schedule user backup creation
+v-schedule-user-backup <user>
+
+# Schedule a backup
+v-schedule-user-backup-download <user> <backup>
+
+# schedule user backup restoration
+v-schedule-user-restore <user> <backup> <web> <dns> <mail> <cron> <udir>
+
+# search for available commands
+v-search-command <arg> <arg>.
+
+# search domain owner
+v-search-domain-owner <domain> <type>
+
+# search file or directory
+v-search-fs-object <user> <object> <path>
+
+# search objects
+v-search-object <object> <format>
+
+# search objects
+v-search-user-object <user> <object> <format>
+
+# start service
+v-start-service <service>
+
+# stop system firewall
+v-stop-firewall
+
+# stop service
+v-stop-service <service>
+
+# suspend cron job
+v-suspend-cron-job <user> <job> <restart>
+
+# Suspending sys cron jobs
+v-suspend-cron-jobs <user> <restart>
+
+# suspend database
+v-suspend-database <user> <database>
+
+# suspend database server
+v-suspend-database-host <type> <host>
+
+# suspend databases
+v-suspend-databases <user>
+
+# suspend dns domain
+v-suspend-dns-domain <user> <domain> <restart>
+
+# suspend dns domains
+v-suspend-dns-domains <user> <restart>
+
+# suspend dns domain record
+v-suspend-dns-record <user> <domain> <id> <restart>
+
+# suspend web/dns/mail domain
+v-suspend-domain <user> <domain>
+
+# suspend firewall rule
+v-suspend-firewall-rule <rule>
+
+# suspend mail account
+v-suspend-mail-account <user> <domain> <account>
+
+# suspend all mail domain accounts
+v-suspend-mail-accounts <user> <domain>
+
+# suspend mail domain
+v-suspend-mail-domain <user> <domain>
+
+# suspend mail domains
+v-suspend-mail-domains <user>
+
+# suspend remote dns server
+v-suspend-remote-dns-host <host>
+
+# suspend user
+v-suspend-user <user> <restart>
+
+# suspend web domain
+v-suspend-web-domain <user> <domain> <restart>
+
+# suspend web domains
+v-suspend-web-domains <user> <restart>
+
+# synchronize dns domains
+v-sync-dns-cluster <host>
+
+# unsuspend cron job
+v-unsuspend-cron-job <user> <job> <restart>
+
+# unsuspend sys cron
+v-unsuspend-cron-jobs <user> <restart>
+
+# unsuspend database
+v-unsuspend-database <user> <database>
+
+# unsuspend database server
+v-unsuspend-database-host <type> <host>
+
+# unsuspend databases
+v-unsuspend-databases <user>
+
+# unsuspend dns domain
+v-unsuspend-dns-domain <user> <domain>
+
+# unsuspend dns domains
+v-unsuspend-dns-domains <user> <restart>
+
+# unsuspend dns domain record
+v-unsuspend-dns-record <user> <domain> <id> <restart>
+
+# unsuspend web/dns/mail domain
+v-unsuspend-domain <user> <domain>
+
+# unsuspend firewall rule
+v-unsuspend-firewall-rule <rule>
+
+# unsuspend mail account
+v-unsuspend-mail-account <user> <domain> <account>
+
+# unsuspend all mail domain accounts
+v-unsuspend-mail-accounts <user> <domain>
+
+# unsuspend mail domain
+v-unsuspend-mail-domain <user> <domain>
+
+# unsuspend mail domains
+v-unsuspend-mail-domains <user>
+
+# unsuspend remote dns server
+v-unsuspend-remote-dns-host <host>
+
+# unsuspend user
+v-unsuspend-user <user> <restart>
+
+# unsuspend web domain
+v-unsuspend-web-domain <user> <domain> <restart>
+
+# unsuspend web domains
+v-unsuspend-web-domains <user> <restart>
+
+# update database disk usage
+v-update-database-disk <user> <database>
+
+# update databases disk usage
+v-update-databases-disk <user>
+
+# update dns templates
+v-update-dns-templates <restart>
+
+# update system firewall rules
+v-update-firewall
+
+# update firewall ipset
+v-update-firewall-ipset <refresh>
+
+# update host certificate for hestia
+v-update-host-certificate <user> <hostname>
+
+# update letsencrypt ssl certificates
+v-update-letsencrypt-ssl
+
+# update mail domain disk usage
+v-update-mail-domain-disk <user> <domain>
+
+# updating ssl certificate for domain
+v-update-mail-domain-ssl <user> <domain> <ssl_dir> <restart>
+
+# calculate disk usage for all mail domains
+v-update-mail-domains-disk <user>
+
+# update mail templates
+v-update-mail-templates <restart> <skip>
+
+# update default key database
+v-update-sys-defaults <system>
+
+# update hestia package/configs
+v-update-sys-hestia <package>
+
+# update all hestia packages
+v-update-sys-hestia-all
+
+# Install update from Git repository
+v-update-sys-hestia-git <repository> <branch> <install> <packages>
+
+# update system ip
+v-update-sys-ip
+
+# update IP usage counters
+v-update-sys-ip-counters
+
+# update system queue
+v-update-sys-queue <pipe>
+
+# update system rrd charts
+v-update-sys-rrd
+
+# update apache2 rrd
+v-update-sys-rrd-apache2 <period>
+
+# update ftp rrd
+v-update-sys-rrd-ftp <period>
+
+# update httpd rrd
+v-update-sys-rrd-httpd <period>
+
+# update load average rrd
+v-update-sys-rrd-la <period>
+
+# update mail rrd
+v-update-sys-rrd-mail <period>
+
+# update memory rrd
+v-update-sys-rrd-mem <period>
+
+# update MySQL rrd
+v-update-sys-rrd-mysql <period>
+
+# update network rrd
+v-update-sys-rrd-net <period>
+
+# update nginx rrd
+v-update-sys-rrd-nginx <period>
+
+# update PostgreSQL rrd
+v-update-sys-rrd-pgsql <period>
+
+# update ssh rrd
+v-update-sys-rrd-ssh <period>
+
+# update backup exclusion list
+v-update-user-backup-exclusions <user> <file>
+
+# update user usage counters
+v-update-user-counters <user>
+
+# update user disk usage
+v-update-user-disk <user>
+
+# update user package
+v-update-user-package <package>
+
+# update user disk quota
+v-update-user-quota <user>
+
+# update user statistics
+v-update-user-stats <user>
+
+# update disk usage for domain
+v-update-web-domain-disk <user> <domain>
+
+# updating ssl certificate for domain
+v-update-web-domain-ssl <user> <domain> <ssl_dir> <restart>
+
+# update domain statistics
+v-update-web-domain-stat <user> <domain>
+
+# update domain bandwidth usage
+v-update-web-domain-traff <user> <domain>
+
+# update domains disk usage
+v-update-web-domains-disk <user>
+
+# update domains statistics
+v-update-web-domains-stat <user>
+
+# update domains bandwidth usage
+v-update-web-domains-traff <user>
+
+# update web templates
+v-update-web-templates <restart> <skip>
