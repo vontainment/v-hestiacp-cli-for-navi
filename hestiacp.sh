@@ -1,4 +1,11 @@
 #!/bin/bash
+##############################################
+#  Project: Hestia Cheats                    #
+#  Author: Vontainment                       #
+#  URL: https://vontainment.com              #
+#  Description: Navi Chat Maker For HestiaCP #
+##############################################
+
 cheat_file=~/hestiacp.cheat
 cd /usr/local/hestia/bin || exit
 echo "% HestiaCP" > "$cheat_file"
